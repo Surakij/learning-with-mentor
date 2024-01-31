@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Surakij/learning-with-mentor/issues"
   },
-  "homepage": "https://github.com/Surakij/learning-with-mentor#readme"
+  "homepage": "https://github.com/Surakij/learning-with-mentor#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
