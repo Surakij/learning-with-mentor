@@ -13,5 +13,7 @@ module.exports = {
   rules: {
     "import/prefer-default-export": "off",
     "max-len": "off",
+    "no-plusplus": "off",
+    "no-restricted-properties": "off",
   },
 };
