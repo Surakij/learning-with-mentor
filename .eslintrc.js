@@ -15,5 +15,10 @@ module.exports = {
     "max-len": "off",
     "no-plusplus": "off",
     "no-restricted-properties": "off",
+    "no-console": "off",
+    "no-return-assign": "off",
+    "no-param-reassign": "off",
+    "func-names": "off",
+    "no-unused-expressions": "off",
   },
 };
