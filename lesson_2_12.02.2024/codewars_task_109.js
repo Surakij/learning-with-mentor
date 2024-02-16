@@ -1,13 +1,12 @@
 function insertDash(num) {
   const strNum = num.toString();
-  let result = strNum[0];
+  let result = "";
 
-  for (let i = 1; i < strNum.length; i++) {
-    if (+strNum[i - 1] % 2 !== 0 && +strNum[i] % 2 !== 0) {
-      result += `-${strNum[i]}`;
-    } else {
-      result += strNum[i];
+  for (let i = 0; i < strNum.length; i++) {
+    if (i > 0 && +strNum[i - 1] % 2 !== 0 && +strNum[i] % 2 !== 0) {
+      result += `-`;
     }
+    result += strNum[i];
   }
   return result;
 }

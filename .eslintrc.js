@@ -20,5 +20,6 @@ module.exports = {
     "no-param-reassign": "off",
     "func-names": "off",
     "no-unused-expressions": "off",
+    "no-nested-ternary": "off",
   },
 };

@@ -1,5 +1,13 @@
 const capitals = function (word) {
-  return word.match(/[A-Z]/g).map((lt) => word.indexOf(lt));
+  // return word.match(/[A-Z]/g).map((lt, index) => word.indexOf(lt));
+  const arrNew = [];
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] === word[i].toUpperCase()) {
+      arrNew.push(i);
+    }
+  }
+  return arrNew;
 };
 
-console.log(capitals("CodEWaRs"), " = [0,3,4,6]");
+console.log(capitals("CodEWaRs"));
+console.log(capitals("LEETCODE"));

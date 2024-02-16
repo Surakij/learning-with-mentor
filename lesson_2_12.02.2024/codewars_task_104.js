@@ -1,7 +1,7 @@
+const vowels = ["a", "e", "i", "o", "u"];
+
 function getCount(str) {
-  return str
-    .split("")
-    .filter((letters) => ["a", "e", "i", "o", "u"].includes(letters)).length;
+  return str.split("").filter((letters) => vowels.includes(letters)).length;
 }
 
 console.log(getCount("the last hope"), "=== 4");

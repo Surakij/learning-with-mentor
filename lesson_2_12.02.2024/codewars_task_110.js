@@ -1,15 +1,16 @@
+function isHomogenous(array) {
+  return array.every((el) => typeof el === typeof array[0]);
+}
+
 function filterHomogenous(arrays) {
-  const result = [];
-  for (let i = 0; i < arrays.length; i++) {
-    const array = arrays[i];
-    if (
-      array.length > 0 &&
-      array.every((el) => typeof el === typeof array[0])
-    ) {
-      result.push(array);
-    }
-  }
-  return result;
+  return arrays.filter(isHomogenous);
+  // const result = [];
+  // for (let array of arrays) {
+  //   if (array.length > 0 && isHomogenous(array)) {
+  //     result.push(array);
+  //   }
+  // }
+  // return result;
 }
 
 console.log(
