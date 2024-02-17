@@ -21,5 +21,6 @@ module.exports = {
     "func-names": "off",
     "no-unused-expressions": "off",
     "no-nested-ternary": "off",
+    "consistent-return": "off",
   },
 };
