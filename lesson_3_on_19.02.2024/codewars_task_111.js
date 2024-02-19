@@ -1,10 +1,21 @@
+// // const letters = ticket[i][0];
+// // const code = ticket[i][1];
+// const [letters, code] = ticket[i]
+
 function bingo(ticket, win) {
   let count = 0;
-  for (let i = 0; i < ticket.length; i++) {
-    if (ticket[i][0].includes(String.fromCharCode(ticket[i][1]))) {
+
+  ticket.forEach(([letters, code]) => {
+    if (letters.includes(String.fromCharCode(code))) {
       count++;
     }
-  }
+  });
+
+  // for (const [letters, code] of ticket) {
+  //   if (letters.includes(String.fromCharCode(code))) {
+  //     count++;
+  //   }
+  // }
   return count >= win ? "Winner!" : "Loser!";
 }
 

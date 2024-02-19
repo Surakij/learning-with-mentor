@@ -1,8 +1,9 @@
 function scrollingText(text) {
   let currentStr = text.toUpperCase();
-  const result = [currentStr];
-  for (let i = 1; i < text.length; i++) {
-    result.push((currentStr = currentStr.slice(1) + currentStr.charAt(0)));
+  const result = [];
+  for (let i = 0; i < text.length; i++) {
+    result.push(currentStr);
+    currentStr = currentStr.slice(1) + currentStr[0];
   }
   return result;
 }

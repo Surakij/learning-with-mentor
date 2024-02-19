@@ -1,7 +1,16 @@
 function rowWeights(array) {
   const result = [0, 0];
+
+  // array.map((x, i) => {
+  //   i % 2 === 0 ? (result[0] += array[i]) : (result[1] += array[i]);
+  // })
+
   for (let i = 0; i < array.length; i++) {
-    i % 2 === 0 ? (result[0] += array[i]) : (result[1] += array[i]);
+    if (i % 2 === 0) {
+      result[0] += array[i];
+    } else {
+      result[1] += array[i];
+    }
   }
   return result;
 }

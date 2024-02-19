@@ -1,4 +1,4 @@
-const arrCheck = (value) => value.every((el) => el instanceof Array);
+const arrCheck = (value) => value.every((el) => Array.isArray(el));
 
 console.log(arrCheck([]), true);
 console.log(arrCheck([["string"]]), true);

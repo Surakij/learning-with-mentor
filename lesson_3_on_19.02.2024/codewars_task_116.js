@@ -1,11 +1,10 @@
 function box(n) {
-  const initArr = Array(n).fill("-".repeat(n));
+  const outer = "-".repeat(n);
+  const inner = `-${" ".repeat(n - 2)}-`;
+  const initArr = Array(n).fill(outer);
+
   for (let i = 1; i < initArr.length - 1; i++) {
-    const newRow = initArr[i].split("");
-    for (let j = 1; j < initArr[i].length - 1; j++) {
-      newRow[j] = " ";
-    }
-    initArr[i] = newRow.join("");
+    initArr[i] = inner;
   }
   return initArr;
 }
