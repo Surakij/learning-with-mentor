@@ -1,9 +1,18 @@
-function replacement(el) {
-  return el === "." ? " [dot] " : el === "@" ? " [at] " : el;
-}
+// const dict = {
+//   ".": " [dot] ",
+//   "@": " [at] ",
+// }
+// function replacement(el) {
+//   // return dict[el] ?? el;
+//   // return el === "." ? " [dot] " : el === "@" ? " [at] " : el;
+// }
+
+// replace
 
 function obfuscate(email) {
-  return email.split("").map(replacement).join("");
+  return email.replaceAll(".", " [dot] ").replace("@", " [at] ");
+
+  // return email.split("").map(replacement).join("");
 }
 
 console.log(obfuscate("test@123.com"));

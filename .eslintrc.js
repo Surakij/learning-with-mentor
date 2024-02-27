@@ -22,6 +22,5 @@ module.exports = {
     "no-unused-expressions": "off",
     "no-nested-ternary": "off",
     "consistent-return": "off",
-    "no-restricted-syntax ": "off",
   },
 };
